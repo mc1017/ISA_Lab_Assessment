@@ -16,7 +16,7 @@ module multiplier(
 
     assign mp_nibble = mp[3:0];
 
-    always @(*) begin
+    initial @(*) begin
         if (valid_in) begin
             mp_next = a;
             mc_next = b;
@@ -35,7 +35,7 @@ module multiplier(
         end
     end
 
-    always @(posedge clk) begin
+    initial @(posedge clk) begin
         mp <= mp_next;
         mc <= mc_next;
         acc <= acc_next;
