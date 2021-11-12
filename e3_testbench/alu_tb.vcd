@@ -1,0 +1,68 @@
+$date
+	Fri Nov 12 08:41:56 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_tb $end
+$var wire 24 ! r [23:0] $end
+$var reg 24 " a [23:0] $end
+$var reg 24 # b [23:0] $end
+$var reg 2 $ op [1:0] $end
+$scope module dut $end
+$var wire 24 % a [23:0] $end
+$var wire 24 & b [23:0] $end
+$var wire 2 ' op [1:0] $end
+$var reg 24 ( r [23:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#1
+b10000 !
+b10000 (
+b1011 #
+b1011 &
+b101 "
+b101 %
+b0 $
+b0 '
+#3
+b1001 !
+b1001 (
+b11101 "
+b11101 %
+b1 $
+b1 '
+#5
+b110 !
+b110 (
+b11 #
+b11 &
+b110000 "
+b110000 %
+b10 $
+b10 '
+#7
+b1110100 !
+b1110100 (
+b10 #
+b10 &
+b11101 "
+b11101 %
+b11 $
+b11 '
+#9
